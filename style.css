@@ -1,0 +1,212 @@
+/* Base de estilo del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sección del Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Sección de Navegación */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Mueve la barra de navegación a la derecha */
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e0e0e0;
+    color: #007BFF;
+}
+
+/* Sección de Portada */
+.portada {
+    width: 100%;
+    height: 600px; /* Mantiene una altura fija */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Efecto hover para todas las imágenes de Portada */
+.portada img:hover {
+    transform: scale(1.05); /* Efecto de alejar ligeramente */
+}
+
+/* Estilos comunes para otras secciones de imágenes */
+.row img {
+    width: 100%;
+    height: 300px; /* Altura fija para todas las imágenes de la galería */
+    object-fit: cover; /* Asegura que las imágenes llenen el contenedor sin distorsión */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover para imágenes en otras secciones (Zoom In) */
+.row img:hover {
+    transform: scale(1.05); /* Efecto de acercar ligeramente */
+}
+
+/* Estilos para la imagen después de la Portada */
+.row .image-container img {
+    width: 100%;
+    height: 300px; /* Altura fija como las otras imágenes */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Centralización y alineación del contenido */
+.row.align-items-center {
+    display: flex;
+    justify-content: center; /* Contenido centralizado horizontalmente */
+    align-items: center;
+    margin: 20px 0; /* Márgenes ajustados para espacio */
+}
+
+.row .col-md-6 {
+    padding: 0 15px; /* Padding alrededor del contenido */
+    text-align: center; /* Centrar texto dentro de la columna */
+}
+
+.row .col-md-6 p {
+    margin: 0;
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Contenedor para los logos y el mapa */
+.social-media-container {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: flex-start; /* Alinear los elementos en la parte superior */
+    margin: 20px 0; /* Agregar margen para el espaciado */
+}
+
+/* Contenedor para los logos */
+.social-logos {
+    display: flex;
+    flex-direction: column; /* Apilar los logos verticalmente */
+    align-items: center; /* Centrar los logos horizontalmente */
+    margin-right: 20px; /* Espacio entre los logos y el mapa */
+}
+
+/* Estilos para los logos */
+.social-logos img {
+    width: 100px; /* Establecer un ancho fijo para los logos */
+    height: auto; /* Mantener la proporción de aspecto */
+    margin-bottom: 10px; /* Espacio entre los logos */
+}
+
+/* Centrar los enlaces debajo de cada logo */
+.social-logos a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 5px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilos para el mapa */
+.social-media-container .map {
+    width: 400px; /* Establecer un ancho para el mapa */
+    height: auto;
+    text-align: center; /* Centrar el texto encima del mapa */
+}
+
+.social-media-container .map h3 {
+    margin-bottom: 10px; /* Espacio entre el texto y el mapa */
+    text-align: center; /* Asegurar que el texto esté centrado */
+}
+
+/* Ajustes de estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .row img {
+        height: auto; /* Permite que las imágenes se ajusten automáticamente en pantallas más pequeñas */
+        max-width: 100%; /* Evita que las imágenes se estiren más allá de su contenedor */
+    }
+
+    .row {
+        padding: 10px; /* Reducir el padding para pantallas más pequeñas */
+    }
+
+    .social-logos {
+        margin-right: 10px; /* Ajustar el espaciado entre los logos y el mapa */
+    }
+
+    .map {
+        width: 100%; /* Permitir que el mapa ocupe todo el ancho en móviles */
+    }
+}
+
+/* Lazy loading para optimización de imágenes */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
