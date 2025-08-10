@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "moneda": "UYU",
+  "productos": [
+    {
+      "id": "cam-01",
+      "nombre": "Camisa Clásica",
+      "precio": 1890,
+      "img": "../images/Productos/vali-productos-camisas.jpg",
+      "cat": "Camisas",
+      "descripcion": "Camisa de algodón fit regular.",
+      "stock": 15,
+      "destacado": true
+    },
+    {
+      "id": "cam-02",
+      "nombre": "Camisa Lino",
+      "precio": 2290,
+      "img": "../images/Productos/vali-productos-camisas.jpg",
+      "cat": "Camisas",
+      "descripcion": "Lino liviano, ideal verano.",
+      "stock": 12,
+      "destacado": false
+    },
+    {
+      "id": "sob-01",
+      "nombre": "Sobrecamisa Oversize",
+      "precio": 2490,
+      "img": "../images/Productos/vali-productos-sobrecamisas.jpg",
+      "cat": "Sobrecamisas",
+      "descripcion": "Corte amplio, textura suave.",
+      "stock": 10,
+      "destacado": true
+    },
+    {
+      "id": "sob-02",
+      "nombre": "Sobrecamisa Utility",
+      "precio": 2690,
+      "img": "../images/Productos/vali-productos-sobrecamisas.jpg",
+      "cat": "Sobrecamisas",
+      "descripcion": "Bolsillos frontales y canvas.",
+      "stock": 8,
+      "destacado": false
+    },
+    {
+      "id": "ves-01",
+      "nombre": "Vestido Midi",
+      "precio": 3290,
+      "img": "../images/Productos/vali-productos-vestidos.jpg",
+      "cat": "Vestidos",
+      "descripcion": "Corte midi, sutil vuelo.",
+      "stock": 9,
+      "destacado": true
+    },
+    {
+      "id": "ves-02",
+      "nombre": "Vestido Slip",
+      "precio": 2990,
+      "img": "../images/Productos/vali-productos-vestidos.jpg",
+      "cat": "Vestidos",
+      "descripcion": "Breteles finos, satinado.",
+      "stock": 7,
+      "destacado": false
+    },
+    {
+      "id": "cha-01",
+      "nombre": "Saco Knit",
+      "precio": 2790,
+      "img": "../images/Productos/vali-productos-chalecosycamisas.jpg",
+      "cat": "Chalecos y Sacos",
+      "descripcion": "Punto grueso, abrigado.",
+      "stock": 11,
+      "destacado": true
+    },
+    {
+      "id": "cha-02",
+      "nombre": "Chaleco Soft",
+      "precio": 1990,
+      "img": "../images/Productos/vali-productos-chalecosycamisas.jpg",
+      "cat": "Chalecos y Sacos",
+      "descripcion": "Tejido suave, corte recto.",
+      "stock": 14,
+      "destacado": false
+    }
+  ]
+}
